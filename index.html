@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sapta Sonia</title>
+  <meta name="description" content="Sapta Sonia (born May 18, 1926): a life of resilience, courage, and love. Honored by the Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School.">
+  <meta property="og:title" content="Sapta Sonia: A Life of Resilience, Courage, and Love">
+  <meta property="og:description" content="Her legacy continues in the children whose lives will be enriched in her name.">
+  <meta property="og:image" content="images/sonia.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --surface: #f1ebe1;
+      --ink: #2b2620;
+      --muted: #6b6155;
+      --accent: #7a5c3e;
+      --accent-ink: #fff;
+      --rule: #ddd3c4;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* Hero */
+    header {
+      text-align: center;
+      padding: 4.5rem 0 3rem;
+    }
+    .eyebrow {
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2.75rem, 9vw, 4.5rem);
+      line-height: 1.05;
+      margin: 0;
+    }
+    .subtitle {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.25rem, 4vw, 1.6rem);
+      color: var(--muted);
+      margin: .75rem 0 0;
+    }
+    .dates { margin-top: 1.25rem; font-size: .95rem; color: var(--muted); }
+
+    /* Photos */
+    figure { margin: 0; }
+    .photo {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      overflow: hidden;
+    }
+    .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .photo.missing img { display: none; }
+    .photo.missing::after {
+      content: attr(data-placeholder);
+      position: absolute; inset: 0;
+      display: grid; place-items: center;
+      padding: 1rem; text-align: center;
+      color: var(--muted); font-size: .9rem; font-style: italic;
+    }
+    .portrait {
+      width: min(18rem, 80%);
+      aspect-ratio: 4 / 5;
+      margin: 2.5rem auto 0;
+      border-radius: 2px;
+      box-shadow: 0 10px 30px rgba(43, 38, 32, .12);
+    }
+    figcaption {
+      font-size: .85rem; color: var(--muted);
+      text-align: center; margin-top: .6rem; font-style: italic;
+    }
+
+    /* Story */
+    main section { padding: 1rem 0 2.5rem; }
+    h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: 2rem;
+      margin: 0 0 1rem;
+    }
+    p { margin: 0 0 1.25rem; }
+    .lead::first-letter {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      float: left; font-size: 4rem; line-height: .85;
+      padding: .3rem .5rem 0 0; color: var(--accent);
+    }
+    .divider {
+      border: 0; height: 1px; background: var(--rule);
+      width: 6rem; margin: 1rem auto 3rem;
+    }
+    .wide {
+      aspect-ratio: 3 / 2;
+      margin: 1rem 0 .25rem;
+      border-radius: 2px;
+    }
+    blockquote {
+      margin: 2.5rem 0;
+      padding: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.4rem, 4.5vw, 1.75rem);
+      line-height: 1.4;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    /* Donate */
+    .donate {
+      background: var(--surface);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+      padding: 3.5rem 0;
+      margin-top: 1rem;
+    }
+    .donate p { color: var(--muted); }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--accent-ink);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: .03em;
+      padding: .9rem 2rem;
+      border-radius: 999px;
+      transition: background .2s;
+    }
+    .button:hover, .button:focus-visible { background: #5f4630; }
+
+    footer {
+      text-align: center;
+      font-size: .85rem;
+      color: var(--muted);
+      padding: 2.5rem 0 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="wrap">
+    <p class="eyebrow">In Honor of</p>
+    <h1>Sapta Sonia</h1>
+    <p class="subtitle">A Life of Resilience, Courage, and Love</p>
+    <p class="dates">Born May 18, 1926 &middot; Łódź, Poland</p>
+
+    <!-- PHOTO 1: save her portrait as images/sonia.jpg -->
+    <figure>
+      <div class="photo portrait" data-placeholder="Portrait of Sonia (images/sonia.jpg)">
+        <img src="images/sonia.jpg" alt="Portrait of Sapta Sonia" onerror="this.parentNode.classList.add('missing')">
+      </div>
+    </figure>
+  </header>
+
+  <main class="wrap">
+    <hr class="divider">
+
+    <section aria-labelledby="story">
+      <h2 id="story">Her Story</h2>
+
+      <p class="lead">Sonia was born on May 18, 1926, in Poland. Before the war, she lived a simple life with her parents and sister in a rooftop apartment in Łódź. Her father was a hardworking carpenter who provided for his family. Though their life was modest, it was filled with the familiar rhythms of family, work, and community. Sonia was just thirteen years old when Germany invaded Poland in September 1939, forever changing the course of her life.</p>
+
+      <p>Like thousands of other Jewish families, Sonia and her family were forced into the Łódź Ghetto, where she would spend nearly five years of her adolescence under unimaginable conditions.</p>
+
+      <p>The Łódź Ghetto was one of the largest and longest-lasting ghettos established by the Nazis during the Holocaust. Its inhabitants endured extreme hunger, overcrowding, disease, forced labor, and the constant threat of deportation. Sonia came of age in this world, where survival depended on resilience, resourcefulness, and extraordinary courage.</p>
+
+      <p>In 1942, when Sonia was sixteen, the Nazis carried out some of their most devastating deportations. Thousands of children, elderly people, and others deemed unable to work were taken away, most never to return. By the summer of 1944, the Germans began the final liquidation of the ghetto, deporting tens of thousands of its remaining inhabitants to Auschwitz and other killing centers.</p>
+
+      <p>Sonia was among a small group of Jewish prisoners left behind to dismantle the ghetto and sort through the belongings of those who had been deported. As the Soviet army approached in January 1945, the Nazis planned to murder the remaining prisoners. Many went into hiding, narrowly escaping death. When Soviet forces liberated Łódź on January 19, 1945, only approximately 877 Jewish people remained alive within the former ghetto. Sonia, just eighteen years old, was among them.</p>
+
+      <p>Although Sonia survived the Holocaust, she rarely spoke of what she had endured. The experiences of those years remained largely unspoken, but their impact was woven into the life she built afterward. Both of her parents also survived the war, an extraordinary outcome amid the devastating loss of European Jewish life.</p>
+
+      <p>Sonia went on to build a family and a future, making sacrifices that would open doors for the generations that followed. Her determination and hard work helped provide her children and grandchildren with opportunities, security, and an education that valued the whole human being.</p>
+    </section>
+
+    <section aria-labelledby="legacy">
+      <h2 id="legacy">Her Legacy</h2>
+
+      <p>Today, her legacy lives on not only through her family, but through the lives they touch. The dedication of the <strong>Sapta Sonia Therapeutic Equestrian Corral</strong> at Otto Specht School honors her strength, her sacrifices, and the possibilities she helped create for future generations.</p>
+
+      <!-- PHOTO 2: save a photo (e.g. the corral, or Sonia with family) as images/corral.jpg -->
+      <figure>
+        <div class="photo wide" data-placeholder="Second photo (images/corral.jpg)">
+          <img src="images/corral.jpg" alt="The Sapta Sonia Therapeutic Equestrian Corral" onerror="this.parentNode.classList.add('missing')">
+        </div>
+        <figcaption>The Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School</figcaption>
+      </figure>
+
+      <p style="margin-top:1.5rem">The program dedicated in her name embodies something deeply connected to her story: the importance of providing children with a place where they feel safe, valued, and cared for.</p>
+
+      <blockquote>Even after unimaginable loss, it is possible to build a future rooted in love, hope, and opportunity.</blockquote>
+
+      <p>Sapta Sonia's life reminds us of this. Her legacy continues in the generations that follow and in the children whose lives will be enriched in her name.</p>
+    </section>
+  </main>
+
+  <section class="donate" id="donate" aria-labelledby="give">
+    <div class="wrap">
+      <h2 id="give">Give in Her Name</h2>
+      <p>Gifts support the Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School.</p>
+      <!-- DONATE LINK: replace the href below with the real donation page URL -->
+      <a class="button" href="#" target="_blank" rel="noopener">Donate in Honor of Sapta Sonia</a>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    SaptaSonia.com
+  </footer>
+
+</body>
+</html>
