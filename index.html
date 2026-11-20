@@ -7,7 +7,8 @@
   <meta name="description" content="Sapta Sonia (born May 18, 1926): a life of resilience, courage, and love. Honored by the Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School.">
   <meta property="og:title" content="Sapta Sonia: A Life of Resilience, Courage, and Love">
   <meta property="og:description" content="Her legacy continues in the children whose lives will be enriched in her name.">
-  <meta property="og:image" content="images/sonia.jpg">
+  <meta property="og:image" content="https://saptasonia.com/images/sonia.jpg">
+  <meta property="og:url" content="https://saptasonia.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -81,11 +82,13 @@
     }
     .portrait {
       width: min(18rem, 80%);
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 900 / 1108;
       margin: 2.5rem auto 0;
-      border-radius: 2px;
-      box-shadow: 0 10px 30px rgba(43, 38, 32, .12);
+      border: 0;
+      border-radius: 999px 999px 2px 2px; /* arch, matching the school's dedication board */
+      box-shadow: 0 10px 30px rgba(43, 38, 32, .15);
     }
+    .portrait img { object-position: center top; }
     figcaption {
       font-size: .85rem; color: var(--muted);
       text-align: center; margin-top: .6rem; font-style: italic;
@@ -109,10 +112,12 @@
       border: 0; height: 1px; background: var(--rule);
       width: 6rem; margin: 1rem auto 3rem;
     }
-    .wide {
-      aspect-ratio: 3 / 2;
-      margin: 1rem 0 .25rem;
+    .candid {
+      width: min(22rem, 100%);
+      aspect-ratio: 359 / 480;
+      margin: 1.5rem auto .25rem;
       border-radius: 2px;
+      box-shadow: 0 10px 30px rgba(43, 38, 32, .12);
     }
     blockquote {
       margin: 2.5rem 0;
@@ -164,7 +169,6 @@
     <p class="subtitle">A Life of Resilience, Courage, and Love</p>
     <p class="dates">Born May 18, 1926 &middot; Łódź, Poland</p>
 
-    <!-- PHOTO 1: save her portrait as images/sonia.jpg -->
     <figure>
       <div class="photo portrait" data-placeholder="Portrait of Sonia (images/sonia.jpg)">
         <img src="images/sonia.jpg" alt="Portrait of Sapta Sonia" onerror="this.parentNode.classList.add('missing')">
@@ -198,12 +202,11 @@
 
       <p>Today, her legacy lives on not only through her family, but through the lives they touch. The dedication of the <strong>Sapta Sonia Therapeutic Equestrian Corral</strong> at Otto Specht School honors her strength, her sacrifices, and the possibilities she helped create for future generations.</p>
 
-      <!-- PHOTO 2: save a photo (e.g. the corral, or Sonia with family) as images/corral.jpg -->
       <figure>
-        <div class="photo wide" data-placeholder="Second photo (images/corral.jpg)">
-          <img src="images/corral.jpg" alt="The Sapta Sonia Therapeutic Equestrian Corral" onerror="this.parentNode.classList.add('missing')">
+        <div class="photo candid" data-placeholder="Photo (images/sonia-later.jpg)">
+          <img src="images/sonia-later.jpg" alt="Sonia in her later years, smiling at home" onerror="this.parentNode.classList.add('missing')">
         </div>
-        <figcaption>The Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School</figcaption>
+        <figcaption>Sonia in her later years</figcaption>
       </figure>
 
       <p style="margin-top:1.5rem">The program dedicated in her name embodies something deeply connected to her story: the importance of providing children with a place where they feel safe, valued, and cared for.</p>
@@ -218,8 +221,7 @@
     <div class="wrap">
       <h2 id="give">Give in Her Name</h2>
       <p>Gifts support the Sapta Sonia Therapeutic Equestrian Corral at Otto Specht School.</p>
-      <!-- DONATE LINK: replace the href below with the real donation page URL -->
-      <a class="button" href="#" target="_blank" rel="noopener">Donate in Honor of Sapta Sonia</a>
+      <a class="button" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&amp;formId=6487ae53-5336-4149-a400-05ff3f2516a0&amp;envid=p-D-nhZYGnwUWOtBihZ_QDiA&amp;zone=usa" target="_blank" rel="noopener">Donate in Honor of Sapta Sonia</a>
     </div>
   </section>
 

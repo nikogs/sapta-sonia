@@ -1,3 +1,7 @@
 .playwright-mcp/
 .DS_Store
 Thumbs.db
+
+# original uploads (web-sized copies live in images/)
+Sapta Sonia.jpg
+Sapta Sonia Board.png
